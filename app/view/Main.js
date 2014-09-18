@@ -1,49 +1,69 @@
 Ext.define('PhotoBomb.view.Main', {
-    extend: 'Ext.tab.Panel',
+    extend: 'Ext.Panel',
     xtype: 'main',
     requires: [
-        'Ext.TitleBar',
-        'Ext.Video'
+        'Ext.Button',
+        'Ext.Img'
     ],
     config: {
-        tabBarPosition: 'bottom',
-
+        layout: {
+            type:"vbox",
+            pack:"center",
+            align:"center"
+        },
         items: [
             {
-                title: 'Welcome',
-                iconCls: 'home',
-
-                styleHtmlContent: true,
-                scrollable: true,
-
-                items: {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
-                },
-
-                html: [
-                    "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
-                    "contents of <a target='_blank' href=\"app/view/Main.js\">app/view/Main.js</a> - edit that file ",
-                    "and refresh to change what's rendered here."
-                ].join("")
+                xtype: "image",
+                src: "http://placehold.it/200x200",
+                width: 200,
+                height: 200
             },
             {
-                title: 'Get Started',
-                iconCls: 'action',
+                xtype: "button",
+                text: "Photo",
+                handler: function()
+                {
+                    console.log('Handler for launching camera');
+                    navigator.camera.getPicture(onSuccess, onFail, {quality:50, destinationType:0});
 
-                items: [
-                    {
-                        docked: 'top',
-                        xtype: 'titlebar',
-                        title: 'Getting Started'
-                    },
-                    {
-                        xtype: 'video',
-                        url: 'http://av.vimeo.com/64284/137/87347327.mp4?token=1330978144_f9b698fea38cd408d52a2393240c896c',
-                        posterUrl: 'http://b.vimeocdn.com/ts/261/062/261062119_640.jpg'
+                    function onSuccess(imageData){
+//                             Ext.Viewport.mask({xtype:'loadmask', message:'Uploading image...'});
+//                             Ext.Ajax.request({
+//                                 url:'http://people.cs.uct.ac.za/~swatermeyer/VulaMobi/ajax.php?gallery/upload',
+//                                 method: 'POST',
+//                                 timeout: 12000,
+//                                 params:{
+//                                     image:imageData,
+//                                     username:localStorage.getItem("username"),
+//					                    password:localStorage.getItem("password")
+//                                 },
+//                                 success: function(response)
+//                                 {
+//                                     Ext.Viewport.unmask();
+//                                     Ext.Msg.alert(response.responseText);
+//                                     refreshImages();
+//                                     console.log(response.responseText);
+//                                 },
+//                                 failure: function(response){
+//                                     Ext.Viewport.unmask();
+//                                     Ext.Msg.alert(response.responseText);
+//                                     console.log(response.responseText);
+//                                 }
+//                             });
+                    }// end of on success function
+
+                    function onFail(){
+                        Ext.Msg.alert(message);
+                        console.log(message);
                     }
-                ]
+
+                    function refreshImages()
+                    {
+
+                        console.log('Image Gallery refreshed');
+                    }
+
+                }
             }
         ]
     }

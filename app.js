@@ -21,6 +21,8 @@ Ext.application({
         'Main'
     ],
 
+    controllers:['LoginController'],
+
     icon: {
         '57': 'resources/icons/Icon.png',
         '72': 'resources/icons/Icon~ipad.png',
@@ -44,7 +46,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('PhotoBomb.view.Main'));
+        Ext.Viewport.add(Ext.create('PhotoBomb.view.LoginView'));
     },
 
     onUpdated: function() {

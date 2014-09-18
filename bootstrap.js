@@ -759,6 +759,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
+  "PhotoBomb.controller.LoginController": [],
+  "PhotoBomb.view.LoginView": [],
   "PhotoBomb.view.Main": []
 });
 
@@ -1704,6 +1706,10 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "PhotoBomb.controller.LoginController": [],
+  "PhotoBomb.view.LoginView": [
+    "widget.vulamobi-loginview"
+  ],
   "PhotoBomb.view.Main": [
     "widget.main"
   ]
