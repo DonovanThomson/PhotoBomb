@@ -42,6 +42,14 @@ Ext.define("Ext.draw.gradient.Linear", {
         this.setDegrees(angle);
     },
 
+    updateDegrees: function () {
+        this.clearCache();
+    },
+
+    updateStops: function () {
+        this.clearCache();
+    },
+
     /**
      * @inheritdoc
      */

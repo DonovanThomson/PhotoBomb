@@ -48,7 +48,7 @@ Ext.define('Ext.draw.Component', {
         'Ext.draw.Surface',
         'Ext.draw.engine.Svg',
         'Ext.draw.engine.Canvas',
-        'Ext.draw.gradient.GradientDefinition'
+        'Ext.draw.sprite.GradientDefinition'
     ],
     engine: 'Ext.draw.engine.Canvas',
     statics: {
@@ -83,9 +83,6 @@ Ext.define('Ext.draw.Component', {
 
         /**
          * @cfg {Function} [resizeHandler] The resize function that can be configured to have a behavior.
-         *
-         * __Note:__ since resize events trigger {@link #renderFrame} calls automatically,
-         * return `false` from the resize function, if it also calls `renderFrame`, to prevent double rendering.
          */
         resizeHandler: null,
 
@@ -146,7 +143,7 @@ Ext.define('Ext.draw.Component', {
 
     applyGradients: function (gradients) {
         var result = [],
-            i, n, gradient, offset;
+            i, n, gradient;
         if (!Ext.isArray(gradients)) {
             return result;
         }
@@ -177,7 +174,7 @@ Ext.define('Ext.draw.Component', {
             }
             result.push(gradient);
         }
-        Ext.draw.gradient.GradientDefinition.add(result);
+        Ext.draw.sprite.GradientDefinition.add(result);
         return result;
     },
 
@@ -247,15 +244,15 @@ Ext.define('Ext.draw.Component', {
 
     onResize: function () {
         var me = this,
-            size = me.element.getSize(),
-            resizeHandler = me.getResizeHandler() || me.resizeHandler,
-            result;
+            size = me.element.getSize();
         me.fireEvent('resize', me, size);
-        result = resizeHandler.call(me, size);
-        if (result !== false) {
-            me.renderFrame();
-            me.onPlaceWatermark();
+        if (me.getResizeHandler()) {
+            me.getResizeHandler().call(me, size);
+        } else {
+            me.resizeHandler(size);
         }
+        me.renderFrame();
+        me.onPlaceWatermark();
     },
 
     resizeHandler: function (size) {
@@ -347,7 +344,6 @@ Ext.define('Ext.draw.Component', {
         Ext.draw.Animator.removeFrameCallback(this.frameCallbackId);
         this.callSuper();
     }
-
 }, function () {
     if (location.search.match('svg')) {
         Ext.draw.Component.prototype.engine = 'Ext.draw.engine.Svg';

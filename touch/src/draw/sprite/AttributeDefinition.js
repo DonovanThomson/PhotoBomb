@@ -152,28 +152,28 @@ Ext.define("Ext.draw.sprite.AttributeDefinition", {
         var definition = this,
             processors = definition.getProcessors(),
             aliases = definition.getAliases(),
-            normalized = {},
-            i, ln, name, val,
+            normalized = {}, i, ln,
+            undef, name, val,
             translation, rotation, scaling,
             matrix, subVal, split;
         if ('rotation' in batchedChanges) {
             rotation = batchedChanges.rotation;
         }
         else {
-            rotation = ('rotate' in batchedChanges) ? batchedChanges.rotate : undefined;
+            rotation = ('rotate' in batchedChanges) ? batchedChanges.rotate : undef;
         }
 
         if ('scaling' in batchedChanges) {
             scaling = batchedChanges.scaling;
         }
         else {
-            scaling = ('scale' in batchedChanges) ? batchedChanges.scale : undefined;
+            scaling = ('scale' in batchedChanges) ? batchedChanges.scale : undef;
         }
 
         if ('translation' in batchedChanges) {
             translation = batchedChanges.translation;
         } else {
-            translation = ('translate' in batchedChanges) ? batchedChanges.translate : undefined;
+            translation = ('translate' in batchedChanges) ? batchedChanges.translate : undef;
         }
 
         if (typeof scaling !== 'undefined') {

@@ -1,8 +1,300 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ab1e735-a764-4f9b-9a06-d1415d4add3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="7ab1e735-a764-4f9b-9a06-d1415d4add3b" name="Default" comment="Remerging app">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/22563313ca3fcf4719f8a91c4769327f859c092d/_Abstract.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/1ac67d65e004d5bef5bc559c5b3677883ed68d84/_AbstractChart.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/22563313ca3fcf4719f8a91c4769327f859c092d/_Box.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/3f06c9b12abf22e468c055592f742f86fd3a7a95/_Button.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_Button.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9352f6ff7b7b23a046c783bb009a062c7475c919/_Button.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/b6641238c21fb08c55128bbb82f9d57a9a7d2034/_Button.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/0df3b99fead0899e20c75ccdfa6000fe5d3583e7/_Carousel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f4f88b0826993cb700bf9f1a7f3dcccbc78e93ea/_Carousel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/ffef1833fcfd25a58edafcd03eda5acb5d94a222/_Carousel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/914c2ceee6c606c649737cf2c16f6687c84caf15/_Checkbox.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/dc403e1c50988ed8eec315a524418ccfad4266bc/_Checkbox.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/246a0799a06388f48f9ff15f6531dd8913805aaf/_Class.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/3f06c9b12abf22e468c055592f742f86fd3a7a95/_Class.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/7e6f9d67ee2107a8e511fd976463e9ac2cfce9a0/_Class.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_Class.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9352f6ff7b7b23a046c783bb009a062c7475c919/_Class.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/b6641238c21fb08c55128bbb82f9d57a9a7d2034/_Class.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/cb027303c6fa683d47cff539bb3cc1e53df3e8e4/_Class.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/22563313ca3fcf4719f8a91c4769327f859c092d/_Dock.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/43cf6b907299fd7eba96ffe490bdde6572f4ac95/_Field.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/7ae8f5bceafd5de494f5718b4b2bf97a255417b0/_Field.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/914c2ceee6c606c649737cf2c16f6687c84caf15/_Field.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/dc403e1c50988ed8eec315a524418ccfad4266bc/_Field.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/0e58d8dcb302a00dd893676b6bb0bbae78c2454b/_FieldSet.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/8ea33dedf8b6a0d96a12cd3e11181410e4f04851/_FieldSet.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/a8fb2cd906fc57deafb1799de90f271058772561/_FieldSet.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/d6c3b308ed0eb2cc84474897b589884076f38953/_FieldSet.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/22563313ca3fcf4719f8a91c4769327f859c092d/_Fit.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/22563313ca3fcf4719f8a91c4769327f859c092d/_Float.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/5249155323dd91c43a6cac2e04986d595268427f/_Grid.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/53544b767ecb0585089607b002ff81dc3c7670c7/_Grid.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/0aaaccb217b9f2d484440156ef15a85a761b4252/_IndexBar.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/a9fe8288341898a0da921b2690cf0a5351c17905/_IndexBar.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/ab31daf6c6423caa9c3a3ec66b94a1ecbe25819a/_IndexBar.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/3f5f392d96302a3b4b41f4203ba5400886c752fb/_Indicator.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/0aaaccb217b9f2d484440156ef15a85a761b4252/_List.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/3fdea04c2d8b84bde7f8003a915173011225567e/_List.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/76888f07ef4eeb77f0aa704051508a3797d90201/_List.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/a9fe8288341898a0da921b2690cf0a5351c17905/_List.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/ab31daf6c6423caa9c3a3ec66b94a1ecbe25819a/_List.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9aca29f132403a6463fd527ae1bb9f4cd2eeb361/_ListPaging.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_Mask.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_Media.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9352f6ff7b7b23a046c783bb009a062c7475c919/_Menu.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/b6641238c21fb08c55128bbb82f9d57a9a7d2034/_Menu.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_MessageBox.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9352f6ff7b7b23a046c783bb009a062c7475c919/_MessageBox.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/b6641238c21fb08c55128bbb82f9d57a9a7d2034/_MessageBox.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/d37b32ef20181d400a5288bc12bc2a2989c9ac39/_PaintMonitor.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/012cbb044619b6b272ca5de73a5e7e88c5e3828c/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/0e58d8dcb302a00dd893676b6bb0bbae78c2454b/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/19216b8c460b7dfc8ed4e630bb1f2d4d84f3d97b/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/3f06c9b12abf22e468c055592f742f86fd3a7a95/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/3ff7f4639ea3968e5a17e4ca4b811259eec82a03/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/8ea33dedf8b6a0d96a12cd3e11181410e4f04851/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9352f6ff7b7b23a046c783bb009a062c7475c919/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/a8fb2cd906fc57deafb1799de90f271058772561/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/b6641238c21fb08c55128bbb82f9d57a9a7d2034/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/bc314ff59f34dab869638e49113bd3d9074f4dbf/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/d6c3b308ed0eb2cc84474897b589884076f38953/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/fc35e4c6ae7a654e85723f638048be075f8f0d3a/_Panel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/07ad0c73dba4d18dee7e7915897dc679256d2b8a/_Picker.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/18d9e54da2477a140cd341bb3b9ade262eb5c460/_Picker.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/acbf387a7b1a9cb0f60a9c1700769377ef10c7f4/_Picker.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/b34befcd8bdb09f4007d1115834321de5f6776cf/_Picker.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/e7e2af134c7487fc8ac31936093d9430d0b84c0b/_Picker.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_ProgressIndicator.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/7efe53d63bf7da88ba436d1286e25f85c319a606/_PullRefresh.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/8fd421625dd88d2b77985bb594636cdbf34235fc/_PullRefresh.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9aca29f132403a6463fd527ae1bb9f4cd2eeb361/_PullRefresh.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/914c2ceee6c606c649737cf2c16f6687c84caf15/_Radio.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/a568323de8c6d5d210ec2c65deae2f80dbbdae2c/_Scroller.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/914c2ceee6c606c649737cf2c16f6687c84caf15/_Search.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9352f6ff7b7b23a046c783bb009a062c7475c919/_SegmentedButton.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/914c2ceee6c606c649737cf2c16f6687c84caf15/_Select.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/dc403e1c50988ed8eec315a524418ccfad4266bc/_Select.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9352f6ff7b7b23a046c783bb009a062c7475c919/_Sheet.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/b6641238c21fb08c55128bbb82f9d57a9a7d2034/_Sheet.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/d37b32ef20181d400a5288bc12bc2a2989c9ac39/_SizeMonitor.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/17872b5ac451940be7ea55fab1e13a9819bb13da/_Slider.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/576786ae441ab63670bb88e18b1e5265114c857d/_Slider.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/914c2ceee6c606c649737cf2c16f6687c84caf15/_Slider.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/dc403e1c50988ed8eec315a524418ccfad4266bc/_Slider.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/dc64bd6765e213173c1c1aeb03d7ee4aa2c2794f/_Slider.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/43cf6b907299fd7eba96ffe490bdde6572f4ac95/_Spinner.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/914c2ceee6c606c649737cf2c16f6687c84caf15/_Spinner.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/dc403e1c50988ed8eec315a524418ccfad4266bc/_Spinner.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/43cf6b907299fd7eba96ffe490bdde6572f4ac95/_TextArea.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/914c2ceee6c606c649737cf2c16f6687c84caf15/_TextArea.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/17872b5ac451940be7ea55fab1e13a9819bb13da/_Toggle.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/43cf6b907299fd7eba96ffe490bdde6572f4ac95/_Toggle.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/576786ae441ab63670bb88e18b1e5265114c857d/_Toggle.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/7ae8f5bceafd5de494f5718b4b2bf97a255417b0/_Toggle.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/3f06c9b12abf22e468c055592f742f86fd3a7a95/_Toolbar.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_Toolbar.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9352f6ff7b7b23a046c783bb009a062c7475c919/_Toolbar.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/b6641238c21fb08c55128bbb82f9d57a9a7d2034/_Toolbar.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/d37b32ef20181d400a5288bc12bc2a2989c9ac39/_Translatable.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_appearance.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_background-clip.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_background-origin.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/91cb8c666af71eda555b23d3a53e76dfcc0208c3/_base.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_blueprint-grid.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_border-radius.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_box-shadow.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_box.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_carbon-fiber.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_checkerboard.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_cicada.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/7f37a42680fb3c19cc6cecd6225f3334fce5766d/_color.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/efbd013a123b265932b325c1f0e3f6e908a65181/_colors.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_columns.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/6df777ee3b65b7516d0ac997dcd3c1fd4e01d050/_css3.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_filter.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/8c788c8b1d8fa906da36196695c6206e2aef9fe6/_float.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_font-face.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_gradients.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/8c788c8b1d8fa906da36196695c6206e2aef9fe6/_hacks.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_houndstooth.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_hyphenation.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_images.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_inline-block.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_lined-paper.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_madras.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_noise.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_opacity.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_polka-dot.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_radial-overlay.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_regions.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_shared.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_striped.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_stripes.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/6df777ee3b65b7516d0ac997dcd3c1fd4e01d050/_support.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_tablecloth.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/f70efb5a1b61e422f615fafb3c7be15ac820fda1/_tartan.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_text-shadow.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_transform.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_transition.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/efbd013a123b265932b325c1f0e3f6e908a65181/_typography.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/345e31b46bdf961a27c8ed7360874bedb903e413/app.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/345e31b46bdf961a27c8ed7360874bedb903e413/cupertino.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/touch/src/draw/sprite/GradientDefinition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/touch/src/draw/Group.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/touch/src/util/JSON.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/7e6f9d67ee2107a8e511fd976463e9ac2cfce9a0/_Button.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/22563313ca3fcf4719f8a91c4769327f859c092d/_Card.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/ab31daf6c6423caa9c3a3ec66b94a1ecbe25819a/_DataView.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_Img.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/76888f07ef4eeb77f0aa704051508a3797d90201/_IndexBar.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/8fd421625dd88d2b77985bb594636cdbf34235fc/_ListPaging.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_Map.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9352f6ff7b7b23a046c783bb009a062c7475c919/_Mask.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_Menu.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/dc403e1c50988ed8eec315a524418ccfad4266bc/_Radio.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/3f06c9b12abf22e468c055592f742f86fd3a7a95/_Sheet.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_Sheet.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/43cf6b907299fd7eba96ffe490bdde6572f4ac95/_Slider.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/7ae8f5bceafd5de494f5718b4b2bf97a255417b0/_Slider.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/2af890926fd65af8af0921ce6bc08c6f1eba2ad7/_Table.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/dc403e1c50988ed8eec315a524418ccfad4266bc/_TextArea.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/905e42fd781c318b3e2f1ee86a0d269a779db16c/_all.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/9352f6ff7b7b23a046c783bb009a062c7475c919/_all.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/b6641238c21fb08c55128bbb82f9d57a9a7d2034/_all.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/c09458151c423cfc05997f876dfd21ca07e0a3af/_all.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/c0e16400a84b9527a05f6e060d3f3af6d49630d2/_all.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/e0669813575509778787fb260efb85e432039c16/_all.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_background-size.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/7f37a42680fb3c19cc6cecd6225f3334fce5766d/_background.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_box-sizing.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/91cb8c666af71eda555b23d3a53e76dfcc0208c3/_cupertino.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/91cb8c666af71eda555b23d3a53e76dfcc0208c3/_default.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/34d6b06780dc1bc120d2fb8126ac6e6373b8cb85/_link-colors.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/temp/production/MyWorkLifeApp/sencha-compiler/cmd-packages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/cupertino.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/temp/production/MyWorkLifeApp/sencha-compiler/app/full-page-master-bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controller/loginController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packager.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/touch/resources/css/mountainview.css" afterPath="$PROJECT_DIR$/resources/css/cupertino.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/AbstractChart.js" afterPath="$PROJECT_DIR$/touch/src/chart/AbstractChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/viewport/Android.js" afterPath="$PROJECT_DIR$/touch/src/viewport/Android.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/modifier/Animation.js" afterPath="$PROJECT_DIR$/touch/src/draw/modifier/Animation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/sprite/AttributeDefinition.js" afterPath="$PROJECT_DIR$/touch/src/draw/sprite/AttributeDefinition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/sprite/AttributeParser.js" afterPath="$PROJECT_DIR$/touch/src/draw/sprite/AttributeParser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/series/Bar.js" afterPath="$PROJECT_DIR$/touch/src/chart/series/Bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/env/Browser.js" afterPath="$PROJECT_DIR$/touch/src/env/Browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/engine/Canvas.js" afterPath="$PROJECT_DIR$/touch/src/draw/engine/Canvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/series/Cartesian.js" afterPath="$PROJECT_DIR$/touch/src/chart/series/Cartesian.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/CartesianChart.js" afterPath="$PROJECT_DIR$/touch/src/chart/CartesianChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/Component.js" afterPath="$PROJECT_DIR$/touch/src/Component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/Component.js" afterPath="$PROJECT_DIR$/touch/src/draw/Component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/sprite/Composite.js" afterPath="$PROJECT_DIR$/touch/src/draw/sprite/Composite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/data/Connection.js" afterPath="$PROJECT_DIR$/touch/src/data/Connection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/interactions/Crosshair.js" afterPath="$PROJECT_DIR$/touch/src/chart/interactions/Crosshair.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/viewport/Default.js" afterPath="$PROJECT_DIR$/touch/src/viewport/Default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/event/publisher/Dom.js" afterPath="$PROJECT_DIR$/touch/src/event/publisher/Dom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/util/Draggable.js" afterPath="$PROJECT_DIR$/touch/src/util/Draggable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/core/Ext-more.js" afterPath="$PROJECT_DIR$/touch/src/core/Ext-more.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/env/Feature.js" afterPath="$PROJECT_DIR$/touch/src/env/Feature.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/field/File.js" afterPath="$PROJECT_DIR$/touch/src/field/File.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/field/FileInput.js" afterPath="$PROJECT_DIR$/touch/src/field/FileInput.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/series/Gauge.js" afterPath="$PROJECT_DIR$/touch/src/chart/series/Gauge.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/gradient/Gradient.js" afterPath="$PROJECT_DIR$/touch/src/draw/gradient/Gradient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/dom/Helper.js" afterPath="$PROJECT_DIR$/touch/src/dom/Helper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/dataview/IndexBar.js" afterPath="$PROJECT_DIR$/touch/src/dataview/IndexBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/field/Input.js" afterPath="$PROJECT_DIR$/touch/src/field/Input.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/core/lang/JSON.js" afterPath="$PROJECT_DIR$/touch/src/core/lang/JSON.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/series/sprite/Line.js" afterPath="$PROJECT_DIR$/touch/src/chart/series/sprite/Line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/gradient/Linear.js" afterPath="$PROJECT_DIR$/touch/src/draw/gradient/Linear.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/MarkerHolder.js" afterPath="$PROJECT_DIR$/touch/src/chart/MarkerHolder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/Markers.js" afterPath="$PROJECT_DIR$/touch/src/chart/Markers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/ux/MenuButton.js" afterPath="$PROJECT_DIR$/touch/src/ux/MenuButton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/data/Model.js" afterPath="$PROJECT_DIR$/touch/src/data/Model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/axis/segmenter/Numeric.js" afterPath="$PROJECT_DIR$/touch/src/chart/axis/segmenter/Numeric.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/mixin/Observable.js" afterPath="$PROJECT_DIR$/touch/src/mixin/Observable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/form/Panel.js" afterPath="$PROJECT_DIR$/touch/src/form/Panel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/field/Password.js" afterPath="$PROJECT_DIR$/touch/src/field/Password.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PhotoBomb.iml" afterPath="$PROJECT_DIR$/.idea/PhotoBomb.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/series/Pie.js" afterPath="$PROJECT_DIR$/touch/src/chart/series/Pie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/device/SQLite.js" afterPath="$PROJECT_DIR$/touch/src/device/SQLite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/field/Select.js" afterPath="$PROJECT_DIR$/touch/src/field/Select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/device/device/Sencha.js" afterPath="$PROJECT_DIR$/touch/src/device/device/Sencha.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/series/Series.js" afterPath="$PROJECT_DIR$/touch/src/chart/series/Series.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/slider/Slider.js" afterPath="$PROJECT_DIR$/touch/src/slider/Slider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/sprite/Sprite.js" afterPath="$PROJECT_DIR$/touch/src/draw/sprite/Sprite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/chart/series/StackedCartesian.js" afterPath="$PROJECT_DIR$/touch/src/chart/series/StackedCartesian.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/Surface.js" afterPath="$PROJECT_DIR$/touch/src/draw/Surface.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/engine/Svg.js" afterPath="$PROJECT_DIR$/touch/src/draw/engine/Svg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/draw/engine/SvgContext.js" afterPath="$PROJECT_DIR$/touch/src/draw/engine/SvgContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/slider/Thumb.js" afterPath="$PROJECT_DIR$/touch/src/slider/Thumb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/event/publisher/TouchGesture.js" afterPath="$PROJECT_DIR$/touch/src/event/publisher/TouchGesture.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/core/version/Version.js" afterPath="$PROJECT_DIR$/touch/src/core/version/Version.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/navigation/View.js" afterPath="$PROJECT_DIR$/touch/src/navigation/View.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/_Button.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/_Button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/var/_Button.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/var/_Button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/base/mixins/_Class.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/base/mixins/_Class.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/field/_Field.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/field/_Field.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/field/_Field.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/field/_Field.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/var/field/_Field.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/var/field/_Field.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/form/_FieldSet.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/form/_FieldSet.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/var/form/_FieldSet.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/var/form/_FieldSet.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/dataview/_List.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/dataview/_List.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/base/src/form/_Panel.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/base/src/form/_Panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/tab/_Panel.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/tab/_Panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/form/_Panel.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/form/_Panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/tab/_Panel.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/tab/_Panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/tizen/base/src/form/_Panel.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/tizen/base/src/form/_Panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/windows/src/tab/_Panel.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/windows/src/tab/_Panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/slider/_Slider.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/slider/_Slider.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/field/_Spinner.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/field/_Spinner.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/_Toolbar.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/_Toolbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/base/src/_all.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/base/src/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/_all.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/bb10/src/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/cupertino-classic/src/_all.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/cupertino-classic/src/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/cupertino/src/_all.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/cupertino/src/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/_all.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/mountainview/src/_all.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/mountainview/src/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/tizen/base/src/_all.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/tizen/base/src/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/tizen/variations/dark/src/_all.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/tizen/variations/dark/src/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/tizen/variations/light/src/_all.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/tizen/variations/light/src/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/windows/src/_all.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/windows/src/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/app.css" afterPath="$PROJECT_DIR$/resources/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/base.css" afterPath="$PROJECT_DIR$/touch/resources/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css-debug/base.css" afterPath="$PROJECT_DIR$/touch/resources/css-debug/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/bb10.css" afterPath="$PROJECT_DIR$/touch/resources/css/bb10.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css-debug/bb10.css" afterPath="$PROJECT_DIR$/touch/resources/css-debug/bb10.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.js" afterPath="$PROJECT_DIR$/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.json" afterPath="$PROJECT_DIR$/bootstrap.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/cupertino-classic.css" afterPath="$PROJECT_DIR$/touch/resources/css/cupertino-classic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css-debug/cupertino-classic.css" afterPath="$PROJECT_DIR$/touch/resources/css-debug/cupertino-classic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/cupertino.css" afterPath="$PROJECT_DIR$/touch/resources/css/cupertino.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css-debug/cupertino.css" afterPath="$PROJECT_DIR$/touch/resources/css-debug/cupertino.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/file-header.txt" afterPath="$PROJECT_DIR$/touch/file-header.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/mountainview.css" afterPath="$PROJECT_DIR$/touch/resources/css/mountainview.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css-debug/mountainview.css" afterPath="$PROJECT_DIR$/touch/resources/css-debug/mountainview.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/sencha-touch-all-debug.js" afterPath="$PROJECT_DIR$/touch/sencha-touch-all-debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/sencha-touch-all.js" afterPath="$PROJECT_DIR$/touch/sencha-touch-all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/sencha-touch-debug.js" afterPath="$PROJECT_DIR$/touch/sencha-touch-debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/sencha-touch.css" afterPath="$PROJECT_DIR$/touch/resources/css/sencha-touch.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css-debug/sencha-touch.css" afterPath="$PROJECT_DIR$/touch/resources/css-debug/sencha-touch.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/sencha-touch.js" afterPath="$PROJECT_DIR$/touch/sencha-touch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/cmd/sencha.cfg" afterPath="$PROJECT_DIR$/touch/cmd/sencha.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/tizen.css" afterPath="$PROJECT_DIR$/touch/resources/css/tizen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css-debug/tizen.css" afterPath="$PROJECT_DIR$/touch/resources/css-debug/tizen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/version.txt" afterPath="$PROJECT_DIR$/touch/version.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/wp.css" afterPath="$PROJECT_DIR$/touch/resources/css/wp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css-debug/wp.css" afterPath="$PROJECT_DIR$/touch/resources/css-debug/wp.css" />
     </list>
     <ignored path="PhotoBomb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,14 +327,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5276873" vertical-offset="162" max-vertical-offset="1206">
+            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1206">
               <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.77870214" vertical-offset="2196" max-vertical-offset="7290">
+              <caret line="148" column="10" selection-start-line="148" selection-start-column="10" selection-end-line="148" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,6 +363,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/view/Main.js" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -191,7 +494,11 @@
       <created>1411039814235</created>
       <updated>1411039814235</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Setting up WebStorm Project">
+      <created>1411039823734</created>
+      <updated>1411039823734</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -234,7 +541,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Setting up WebStorm Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up WebStorm Project" />
+    <MESSAGE value="Remerging app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remerging app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -250,11 +558,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5276873" vertical-offset="162" max-vertical-offset="1206">
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1206">
           <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77870214" vertical-offset="2196" max-vertical-offset="7272">
+          <caret line="148" column="10" selection-start-line="148" selection-start-column="10" selection-end-line="148" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

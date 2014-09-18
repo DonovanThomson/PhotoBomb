@@ -4,7 +4,7 @@
  *
  * Mixin that provides the functionality to place markers.
  */
-Ext.define('Ext.chart.MarkerHolder', {
+Ext.define("Ext.chart.MarkerHolder", {
     extend: 'Ext.mixin.Mixin',
     mixinConfig: {
         id: 'markerHolder',
@@ -75,35 +75,11 @@ Ext.define('Ext.chart.MarkerHolder', {
     },
 
     getMarkerBBox: function (name, index, isWithoutTransform) {
-        var id = this.getId(),
-            left = Infinity,
-            right = -Infinity,
-            top = Infinity,
-            bottom = -Infinity,
-            bbox, boundMarker, i, ln;
-
+        var boundMarkersItem, i, ln, id = this.getId();
         if (this.boundMarkers[name]) {
-            for (boundMarker = this.boundMarkers[name], i = 0, ln = boundMarker.length; i < ln; i++) {
-                bbox = boundMarker[i].getMarkerBBoxFor(id, index, isWithoutTransform);
-                if (left > bbox.x) {
-                    left = bbox.x;
-                }
-                if (right < bbox.x + bbox.width) {
-                    right = bbox.x + bbox.width;
-                }
-                if (top > bbox.y) {
-                    top = bbox.y;
-                }
-                if (bottom < bbox.y + bbox.height) {
-                    bottom = bbox.y + bbox.height;
-                }
+            for (boundMarkersItem = this.boundMarkers[name], i = 0, ln = boundMarkersItem.length; i < ln; i++) {
+                return boundMarkersItem[i].getMarkerBBoxFor(id, index, isWithoutTransform);
             }
         }
-        return {
-            x: left,
-            y: top,
-            width: right - left,
-            height: bottom - top
-        };
     }
 });

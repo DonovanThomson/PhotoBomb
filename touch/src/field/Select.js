@@ -607,29 +607,14 @@ Ext.define('Ext.field.Select', {
      * @chainable
      */
     reset: function() {
-        var me = this,
-            record;
+        var store = this.getStore(),
+            record = (this.originalValue) ? this.originalValue : store.getAt(0);
 
-        if (me.getAutoSelect()) {
-            var store = me.getStore();
-
-            record = (me.originalValue) ? me.originalValue : store.getAt(0);
-        } else {
-            var usePicker = me.getUsePicker(),
-                picker = usePicker ? me.picker : me.listPanel;
-
-            if (picker) {
-                picker = picker.child(usePicker ? 'pickerslot' : 'dataview');
-
-                picker.deselectAll();
-            }
-
-            record = null;
+        if (store && record) {
+            this.setValue(record);
         }
 
-        me.setValue(record);
-
-        return me;
+        return this;
     },
 
     onFocus: function(e) {

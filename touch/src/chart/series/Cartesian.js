@@ -11,16 +11,18 @@ Ext.define('Ext.chart.series.Cartesian', {
     extend: 'Ext.chart.series.Series',
     config: {
         /**
-         * The field used to access the x axis value from the items from the data source.
+         * The field used to access the x axis value from the items from the data
+         * source.
          *
          * @cfg {String} xField
          */
         xField: null,
 
         /**
-         * The field(s) used to access the y-axis value(s) of the items from the data source.
+         * The field used to access the y-axis value from the items from the data
+         * source.
          *
-         * @cfg {String|String[]} yField
+         * @cfg {String} yField
          */
         yField: null,
 

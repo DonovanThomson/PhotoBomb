@@ -1,31 +1,8 @@
 {
-    "builds": {
-        "web": {"default": true},
-        "native": {
-            "packager": "phonegap",
-            "phonegap" : {
-                "config": {
-                    // Uncomment the line below and add the platform you wish to build for
-                    "platform": "android",
-
-                    // Uncomment and Set this line to true to enable PhoneGap Remote Building.
-                    // To properly use this you must set the following properties in your local.properties file (if this file does not exist create it in your app root)
-                    // phonegap.remote.username=myname@domain.com
-                    // phonegap.remote.password=mys3cr3tp@ssw0rd
-                    //"remote":false,
-
-                    "id": "com.domain.Jedi",
-                    "name": "Jedi"
-                }
-            }
-        }
-    },
-
-                
     /**
      * The application's namespace, used by Sencha Command to generate classes
      */
-    "name": "Jedi",
+    "name": "MyWorkLifeApp",
 
     /**
      * The file path to this application's front HTML document, relative to this app.json file
@@ -95,7 +72,7 @@
      */
     "css": [
         {
-            "path": "resources/css/app.css",
+            "path": "resources/css/cupertino.css",
             "update": "delta"
         }
     ],
@@ -154,5 +131,5 @@
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "53854427-cd38-4a42-8a50-d32f33285b23"
+    "id": "74feb419-33bf-40f2-adc4-d67cbbc4aa9b"
 }

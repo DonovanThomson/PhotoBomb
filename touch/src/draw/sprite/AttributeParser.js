@@ -9,7 +9,7 @@ Ext.define("Ext.draw.sprite.AttributeParser", {
     attributeRe: /^url\(#([a-zA-Z\-]+)\)$/,
     requires: [
         'Ext.draw.Color',
-        'Ext.draw.gradient.GradientDefinition'
+        'Ext.draw.sprite.GradientDefinition'
     ],
 
     "default": function (n) {
@@ -59,7 +59,7 @@ Ext.define("Ext.draw.sprite.AttributeParser", {
         } else if (!n) {
             return 'none';
         } else if (Ext.isString(n)) {
-            n = Ext.draw.gradient.GradientDefinition.get(n);
+            n = Ext.draw.sprite.GradientDefinition.get(n);
             if (Ext.isString(n)) {
                 return n;
             }

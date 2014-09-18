@@ -489,9 +489,8 @@ Ext.define('Ext.form.Panel', {
      * @param {Ext.form.Panel} options.success.form
      * The {@link Ext.form.Panel} that requested the action.
      *
-     * @param {Object/Ext.direct.Event} options.success.result
-     * The result object returned by the server as a result of the submit request. If the submit is sent using Ext.Direct,
-     * this will return the {@link Ext.direct.Event} instance, otherwise will return an Object.
+     * @param {Ext.form.Panel} options.success.result
+     * The result object returned by the server as a result of the submit request.
      *
      * @param {Object} options.success.data
      * The parsed data returned by the server.
@@ -517,8 +516,6 @@ Ext.define('Ext.form.Panel', {
      * If the standardSubmit config is true, then the return value is undefined.
      */
     submit: function(options, e) {
-        options = options || {};
-
         var me = this,
             formValues = me.getValues(me.getStandardSubmit() || !options.submitDisabled),
             form = me.element.dom || {};
@@ -571,10 +568,6 @@ Ext.define('Ext.form.Panel', {
                     fileinputElement.parentNode.insertBefore(input, fileinputElement.nextSibling);
                     form.appendChild(fileinputElement);
                     form.$fileswap.push({original: fileinputElement, placeholder: input});
-                } else if(field.isPassword) {
-                    if(field.getComponent().getType !== "password") {
-                        field.setRevealed(false);
-                    }
                 }
             }
         }
@@ -827,9 +820,8 @@ Ext.define('Ext.form.Panel', {
      * @param {Ext.form.Panel} options.success.form
      * The {@link Ext.form.Panel} that requested the load.
      *
-     * @param {Object/Ext.direct.Event} options.success.result
-     * The result object returned by the server as a result of the load request. If the loading was done via Ext.Direct,
-     * will return the {@link Ext.direct.Event} instance, otherwise will return an Object.
+     * @param {Ext.form.Panel} options.success.result
+     * The result object returned by the server as a result of the load request.
      *
      * @param {Object} options.success.data
      * The parsed data returned by the server.
@@ -860,7 +852,7 @@ Ext.define('Ext.form.Panel', {
             api = me.getApi(),
             url = me.getUrl() || options.url,
             waitMsg = options.waitMsg,
-            successFn = function(response, data) {
+            successFn = function(data, response) {
                 me.setValues(data.data);
 
                 if (Ext.isFunction(options.success)) {
@@ -869,7 +861,7 @@ Ext.define('Ext.form.Panel', {
 
                 me.fireEvent('load', me, response);
             },
-            failureFn = function(response, data) {
+            failureFn = function(data, response) {
                 if (Ext.isFunction(options.failure)) {
                     options.failure.call(scope, me, response, data);
                 }
@@ -919,6 +911,7 @@ Ext.define('Ext.form.Panel', {
         } else if (url) {
             return Ext.Ajax.request({
                 url: url,
+                scope: me,
                 timeout: (options.timeout || this.getTimeout()) * 1000,
                 method: options.method || 'GET',
                 autoAbort: options.autoAbort,
@@ -929,7 +922,8 @@ Ext.define('Ext.form.Panel', {
                     options.headers || {}
                 ),
                 callback: function(callbackOptions, success, response) {
-                    var responseText = response.responseText,
+                    var me = this,
+                        responseText = response.responseText,
                         statusResult = Ext.Ajax.parseStatus(response.status, response);
 
                     me.setMasked(false);

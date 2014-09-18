@@ -5,7 +5,7 @@
  * methods for this class is the `add` method, to add Sprites to the surface.
  *
  * Most of the Surface methods are abstract and they have a concrete implementation
- * in Canvas or SVG engines.
+ * in VML or SVG engines.
  *
  * A Surface instance can be accessed as a property of a draw component. For example:
  *
@@ -28,39 +28,45 @@
  *             radius: 10,
  *             fill: '#f00',
  *             x: 10,
- *             y: 10
+ *             y: 10,
+ *             group: 'circles'
  *         },
  *         {
  *             type: 'circle',
  *             radius: 10,
  *             fill: '#0f0',
  *             x: 50,
- *             y: 50
+ *             y: 50,
+ *             group: 'circles'
  *         },
  *         {
  *             type: 'circle',
  *             radius: 10,
  *             fill: '#00f',
  *             x: 100,
- *             y: 100
+ *             y: 100,
+ *             group: 'circles'
  *         },
  *         {
  *             type: 'rect',
  *             radius: 10,
  *             x: 10,
- *             y: 10
+ *             y: 10,
+ *             group: 'rectangles'
  *         },
  *         {
  *             type: 'rect',
  *             radius: 10,
  *             x: 50,
- *             y: 50
+ *             y: 50,
+ *             group: 'rectangles'
  *         },
  *         {
  *             type: 'rect',
  *             radius: 10,
  *             x: 100,
- *             y: 100
+ *             y: 100,
+ *             group: 'rectangles'
  *         }
  *     ]);
  *
@@ -74,7 +80,8 @@ Ext.define('Ext.draw.Surface', {
         'Ext.draw.gradient.*',
         'Ext.draw.sprite.AttributeDefinition',
         'Ext.draw.Matrix',
-        'Ext.draw.Draw'
+        'Ext.draw.Draw',
+        'Ext.draw.Group'
     ],
 
     uses: [
@@ -127,15 +134,21 @@ Ext.define('Ext.draw.Surface', {
 
         /**
          * @cfg {Object}
-         * Background sprite config of the surface.
+         * The config of a background sprite of current surface
          */
         background: null,
 
         /**
-         * @cfg {Array}
-         * Array of sprite instances.
+         * @cfg {Ext.draw.Group}
+         * The default group of the surfaces.
          */
         items: [],
+
+        /**
+         * @cfg {Array}
+         * An array of groups.
+         */
+        groups: [],
 
         /**
          * @cfg {Boolean}
@@ -151,11 +164,7 @@ Ext.define('Ext.draw.Surface', {
 
         me.predecessors = [];
         me.successors = [];
-        // The `pendingRenderFrame` flag is used to indicate that `predecessors` (surfaces that should render first)
-        // are dirty, and to call `renderFrame` when all `predecessors` have their `renderFrame` called
-        // (i.e. not dirty anymore).
         me.pendingRenderFrame = false;
-        me.map = {};
 
         me.callSuper([config]);
         me.matrix = new Ext.draw.Matrix();
@@ -285,16 +294,6 @@ Ext.define('Ext.draw.Surface', {
     },
 
     /**
-     * Get the sprite by id or index.
-     * It will first try to find a sprite with the given id, otherwise will try to use the id as an index.
-     * @param {String|Number} id
-     * @returns {Ext.draw.sprite.Sprite}
-     */
-    get: function (id) {
-        return this.map[id] || this.items[id];
-    },
-
-    /**
      * Add a Sprite to the surface.
      * You can put any number of object as parameter.
      * See {@link Ext.draw.sprite.Sprite} for the configuration object to be passed into this method.
@@ -315,25 +314,25 @@ Ext.define('Ext.draw.Surface', {
             args = Array.prototype.slice.call(arguments),
             argIsArray = Ext.isArray(args[0]),
             results = [],
-            sprite, sprites, items, i, ln;
+            sprite, sprites, items, i, ln, group, groups;
 
         items = Ext.Array.clean(argIsArray ? args[0] : args);
-        if (!items.length) {
-            return results;
-        }
         sprites = me.prepareItems(items);
 
         for (i = 0, ln = sprites.length; i < ln; i++) {
             sprite = sprites[i];
-            me.map[sprite.getId()] = sprite;
+            groups = sprite.group;
+            if (groups.length) {
+                for (i = 0, ln = groups.length; i < ln; i++) {
+                    group = groups[i];
+                    me.getGroup(group).add(sprite);
+                }
+            }
+
+            me.getItems().add(sprite);
             results.push(sprite);
             sprite.setParent(this);
             me.onAdd(sprite);
-        }
-
-        items = me.getItems();
-        if (items) {
-            items.push.apply(items, results);
         }
 
         me.dirtyZIndex = true;
@@ -348,7 +347,7 @@ Ext.define('Ext.draw.Surface', {
 
     /**
      * @protected
-     * Invoked when a sprite is added to the surface.
+     * Invoked when a sprite is adding to the surface.
      * @param {Ext.draw.sprite.Sprite} sprite The sprite to be added.
      */
     onAdd: Ext.emptyFn,
@@ -364,16 +363,17 @@ Ext.define('Ext.draw.Surface', {
      *      sprite.remove();
      *
      * @param {Ext.draw.sprite.Sprite} sprite
-     * @param {Boolean} [destroySprite=false]
+     * @param {Boolean} destroySprite
      */
     remove: function (sprite, destroySprite) {
         if (sprite) {
-            delete this.map[sprite.getId()];
-            if (destroySprite) {
+            if (destroySprite === true) {
                 sprite.destroy();
             } else {
-                sprite.setParent(null);
-                Ext.Array.remove(this.getItems(), sprite);
+                this.getGroups().each(function (item) {
+                    item.remove(sprite);
+                });
+                this.getItems().remove(sprite);
             }
             this.dirtyZIndex = true;
             this.setDirty(true);
@@ -385,33 +385,27 @@ Ext.define('Ext.draw.Surface', {
      *
      * For example:
      *
-     *      drawComponent.getSurface('main').removeAll();
+     *      drawComponent.surface.removeAll();
      *
-     * @param {Boolean} [destroySprites=false]
      */
-    removeAll: function (destroySprites) {
-        var items = this.getItems(),
-            i = items.length;
-        if (destroySprites) {
-            while (i > 0) {
-                items[--i].destroy();
-            }
-        } else {
-            while (i > 0) {
-                items[--i].setParent(null);
-            }
-        }
-        items.length = 0;
-        this.map = {};
+    removeAll: function () {
+        this.getItems().clear();
         this.dirtyZIndex = true;
     },
 
     // @private
-    applyItems: function (items) {
-        if (this.getItems()) {
-            this.removeAll(true);
+    applyItems: function (items, oldItems) {
+        var result;
+
+        if (items instanceof Ext.draw.Group) {
+            result = items;
+        } else {
+            result = new Ext.draw.Group({surface: this});
+            result.autoDestroy = true;
+            result.addAll(this.prepareItems(items));
         }
-        return Ext.Array.from(this.add(items));
+        this.setDirty(true);
+        return result;
     },
 
     /**
@@ -434,9 +428,92 @@ Ext.define('Ext.draw.Surface', {
                 // Temporary, just take in configs...
                 item = items[i] = me.createItem(item);
             }
+            for (j = 0; j < item.group.length; j++) {
+                me.getGroup(item.group[j]).add(item);
+            }
             item.on('beforedestroy', removeSprite, me);
         }
         return items;
+    },
+
+    applyGroups: function (groups, oldGroups) {
+        var result;
+
+        if (groups instanceof Ext.util.MixedCollection) {
+            result = groups;
+        } else {
+            result = new Ext.util.MixedCollection();
+            result.addAll(groups);
+        }
+        if (oldGroups) {
+            oldGroups.each(function (group) {
+                if (!result.contains()) {
+                    group.destroy();
+                }
+            });
+            oldGroups.destroy();
+        }
+        this.setDirty(true);
+        return result;
+    },
+
+    /**
+     * @deprecated Do not use groups directly
+     * Returns a new group or an existent group associated with the current surface.
+     * The group returned is a {@link Ext.draw.Group} group.
+     *
+     * For example:
+     *
+     *      var spriteGroup = drawComponent.surface.getGroup('someGroupId');
+     *
+     * @param {String} id The unique identifier of the group.
+     * @return {Ext.draw.Group} The group.
+     */
+    getGroup: function (id) {
+        var group;
+        if (typeof id === "string") {
+            group = this.getGroups().get(id);
+            if (!group) {
+                group = this.createGroup(id);
+            }
+        } else {
+            group = id;
+        }
+        return group;
+    },
+
+    /**
+     * @private
+     * @deprecated Do not use groups directly
+     * @param {String} id
+     * @return {Ext.draw.Group} The group.
+     */
+    createGroup: function (id) {
+        var group = this.getGroups().get(id);
+
+        if (!group) {
+            group = new Ext.draw.Group({surface: this});
+            group.id = id || Ext.id(null, 'ext-surface-group-');
+            this.getGroups().add(group);
+        }
+        this.setDirty(true);
+        return group;
+    },
+
+    /**
+     * @private
+     * @deprecated Do not use groups directly
+     * @param {Ext.draw.Group} group
+     */
+    removeGroup: function (group) {
+        if (Ext.isString(group)) {
+            group = this.getGroups().get(group);
+        }
+        if (group) {
+            this.getGroups().remove(group);
+            group.destroy();
+        }
+        this.setDirty(true);
     },
 
     /**
@@ -449,41 +526,13 @@ Ext.define('Ext.draw.Surface', {
     },
 
     /**
-     * Return the minimal bounding box that contains all the sprites bounding boxes in the given list of sprites.
-     * @param {Ext.draw.sprite.Sprite[]|Ext.draw.sprite.Sprite} sprites
-     * @param {Boolean} [isWithoutTransform=false]
-     * @returns {{x: Number, y: Number, width: number, height: number}}
+     * @deprecated Use the `sprite.getBBox(isWithoutTransform)` directly.
+     * @param {Ext.draw.sprite.Sprite} sprite
+     * @param {Boolean} isWithoutTransform
+     * @return {Object}
      */
-    getBBox: function (sprites, isWithoutTransform) {
-        var sprites = Ext.Array.from(sprites),
-            left = Infinity,
-            right = -Infinity,
-            top = Infinity,
-            bottom = -Infinity,
-            sprite, bbox, i, ln;
-
-        for (i = 0, ln = sprites.length; i < ln; i++) {
-            sprite = sprites[i];
-            bbox = sprite.getBBox(isWithoutTransform);
-            if (left > bbox.x) {
-                left = bbox.x;
-            }
-            if (right < bbox.x + bbox.width) {
-                right = bbox.x + bbox.width;
-            }
-            if (top > bbox.y) {
-                top = bbox.y;
-            }
-            if (bottom < bbox.y + bbox.height) {
-                bottom = bbox.y + bbox.height;
-            }
-        }
-        return {
-            x: left,
-            y: top,
-            width: right - left,
-            height: bottom - top
-        };
+    getBBox: function (sprite, isWithoutTransform) {
+        return sprite.getBBox(isWithoutTransform);
     },
 
     /**
@@ -497,7 +546,7 @@ Ext.define('Ext.draw.Surface', {
      */
     orderByZIndex: function () {
         var me = this,
-            items = me.getItems(),
+            items = me.getItems().items,
             dirtyZIndex = false,
             i, ln;
 
@@ -541,13 +590,12 @@ Ext.define('Ext.draw.Surface', {
         }
         if (this.dirtyPredecessor > 0) {
             this.pendingRenderFrame = true;
-            return;
         }
 
         var me = this,
             region = this.getRegion(),
             background = me.getBackground(),
-            items = me.getItems(),
+            items = me.getItems().items,
             item, i, ln;
 
         // Cannot render before the surface is placed.
@@ -613,6 +661,8 @@ Ext.define('Ext.draw.Surface', {
         var me = this;
         me.removeAll();
         me.setBackground(null);
+        me.setGroups([]);
+        me.getGroups().destroy();
         me.predecessors = null;
         me.successors = null;
         me.callSuper();
