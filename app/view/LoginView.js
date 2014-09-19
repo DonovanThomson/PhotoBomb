@@ -37,13 +37,15 @@ Ext.define('PhotoBomb.view.LoginView',{
                     {
                         xtype: 'textfield',
                         label: 'Username',
-                        name: 'username'
+                        name: 'username',
+                        value: 'donovan.thomson'
 
                     },
                     {
                         xtype:'passwordfield',
                         label: 'Password',
-                        name: 'password'
+                        name: 'password',
+                        value: 'password$123'
 
                     }
                 ]
