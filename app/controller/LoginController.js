@@ -23,7 +23,7 @@ Ext.define('PhotoBomb.controller.LoginController', {
         var password = form.password;
 
         Ext.Ajax.request({
-            url:'http://192.168.0.183:8080/app/api/rest//token/',
+            url:'http://192.168.2.4:8080/app/api/rest//token/',
             method:'POST',
             headers: {
                 Authorization: 'Basic '+ base64_encode(username+':'+password)

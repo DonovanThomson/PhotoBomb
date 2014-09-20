@@ -1,3 +1,5 @@
+
+
 Ext.define('PhotoBomb.view.Main', {
     extend: 'Ext.Panel',
     xtype: 'main',
@@ -24,17 +26,23 @@ Ext.define('PhotoBomb.view.Main', {
                 handler: function()
                 {
                     console.log('Handler for launching camera');
-                    navigator.camera.getPicture(onSuccess, onFail, {quality:50, destinationType:Camera.DestinationType.DATA_URL});
+                    navigator.camera.getPicture(onSuccess, onFail, { quality: 40,
+                        targetWidth: 500,
+                        targetHeight: 500,
+                        encodingType : navigator.camera.EncodingType.JPEG,
+                        destinationType:Camera.DestinationType.DATA_URL});
 
                     function onSuccess(imageData){
-                        console.log(imageData);
+                        var image = document.getElementById('myImage');
+                        image.src = "data:image/jpeg;base64," + imageData;
+
+                        console.log(image);
                              Ext.Viewport.mask({xtype:'loadmask', message:'Uploading image...'});
                              Ext.Ajax.request({
-                                 url:'http://192.168.0.213:8080/app/api/rest//uploadImage/',
+                                 url:'http://192.168.2.4:8080/app/api/rest//uploadImage/',
                                  method: 'POST',
                                  headers: {Authorization: 'TOKEN_BASED_AUTHENTICATION '+ localStorage.getItem('Token')},
-                                 timeout: 12000,
-                                 params:{ image:imageData },
+                                 params:{ image:image },
                                  success: function(response) {
                                      Ext.Viewport.unmask();
                                      Ext.Msg.alert("Success");
@@ -56,7 +64,6 @@ Ext.define('PhotoBomb.view.Main', {
 
                     function refreshImages()
                     {
-
                         console.log('Image Gallery refreshed');
                     }
 
