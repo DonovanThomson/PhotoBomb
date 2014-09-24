@@ -46,6 +46,7 @@
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/config.xml \
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/resources/resources \
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/resources/css \
+/home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/resources/images \
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/resources/resources/icons \
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/resources/resources/startup \
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/resources/resources/images \
@@ -65,6 +66,7 @@
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/resources/resources/startup/1536x2008.png \
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/resources/resources/images/logo1.jpg \
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/resources/css/app.css \
+/home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/resources/images/logo1.jpg \
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/plugins/org.apache.cordova.camera \
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer \
 /home/donovan/PhotoBomb/phonegap/platforms/android/assets/www/plugins/org.apache.cordova.file \
